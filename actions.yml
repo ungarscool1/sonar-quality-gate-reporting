@@ -1,0 +1,13 @@
+name: Unofficial SonarQube Quality Gate Reporting
+description: >
+  Fetch SonarQube Quality Gate status for a project
+branding:
+  icon: check
+  color: green
+runs:
+  using: docker
+  image: Dockerfile
+inputs:
+  args:
+    description: Additional arguments to the reporter
+    required: false

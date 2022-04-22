@@ -1,0 +1,29 @@
+{
+  "name": "@ungarscool1/sonar-quality-gate-reporting",
+  "version": "1.0.0",
+  "description": "Publish SonarQube Quality Gate result in PR comments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ungarscool1/sonar-quality-gate-reporting.git"
+  },
+  "keywords": [
+    "sonarqube",
+    "quality",
+    "gate",
+    "ci",
+    "code",
+    "analysis",
+    "code",
+    "analytics"
+  ],
+  "author": "Léo Godard <leo@legodard.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ungarscool1/sonar-quality-gate-reporting/issues"
+  },
+  "homepage": "https://github.com/ungarscool1/sonar-quality-gate-reporting#readme"
+}
