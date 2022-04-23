@@ -15,11 +15,11 @@ LABEL version="1.1.0" \
     com.github.actions.icon="check" \
     com.github.actions.color="green"
 
-WORKDIR /github/workspace/
+WORKDIR /app
 
 COPY package.json .
 COPY yarn.lock .
 COPY --from=build /app/build .
 RUN yarn install --prod
 
-CMD ["node", "index.js"]
+CMD ["node", "/app/index.js"]
