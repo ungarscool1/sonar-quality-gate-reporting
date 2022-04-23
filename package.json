@@ -1,29 +1,41 @@
 {
-  "name": "@ungarscool1/sonar-quality-gate-reporting",
-  "version": "1.0.0",
-  "description": "Publish SonarQube Quality Gate result in PR comments",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ungarscool1/sonar-quality-gate-reporting.git"
-  },
-  "keywords": [
-    "sonarqube",
-    "quality",
-    "gate",
-    "ci",
-    "code",
-    "analysis",
-    "code",
-    "analytics"
-  ],
-  "author": "Léo Godard <leo@legodard.fr>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ungarscool1/sonar-quality-gate-reporting/issues"
-  },
-  "homepage": "https://github.com/ungarscool1/sonar-quality-gate-reporting#readme"
+    "name": "@ungarscool1/sonar-quality-gate-reporting",
+    "version": "1.0.0",
+    "description": "Publish SonarQube Quality Gate result in PR comments",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ungarscool1/sonar-quality-gate-reporting.git"
+    },
+    "keywords": [
+        "sonarqube",
+        "quality",
+        "gate",
+        "ci",
+        "code",
+        "analysis",
+        "code",
+        "analytics"
+    ],
+    "author": "Léo Godard <leo@legodard.fr>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ungarscool1/sonar-quality-gate-reporting/issues"
+    },
+    "homepage": "https://github.com/ungarscool1/sonar-quality-gate-reporting#readme",
+    "devDependencies": {
+        "@types/jsonwebtoken": "^8.5.8",
+        "@types/node": "^17.0.25",
+        "@types/node-rsa": "^1.1.1",
+        "typescript": "^4.6.3"
+    },
+    "dependencies": {
+        "axios": "^0.26.1",
+        "jsonwebtoken": "^8.5.1",
+        "node-rsa": "^1.1.1"
+    }
 }
