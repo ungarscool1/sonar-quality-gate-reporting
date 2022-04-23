@@ -1,4 +1,4 @@
-name: Unofficial SonarQube Quality Gate Reporting
+name: Community SonarQube Quality Gate Reporting
 description: >
   Fetch SonarQube Quality Gate status for a project
 branding:
