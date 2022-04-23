@@ -1,7 +1,5 @@
 import * as jwt from 'jsonwebtoken';
-import NodeRSA from 'node-rsa';
 import axios from 'axios';
-import { GithubInstallationAccessToken } from './types';
 import * as Sonar from '../sonar';
 
 export const sendQualityReport = async (report: Sonar.Types.QualityReport): Promise<void> => {

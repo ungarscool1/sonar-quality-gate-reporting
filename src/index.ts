@@ -9,7 +9,7 @@ import * as Github from './github';
         const measure = await Sonar.getMeasure(process.env.SONAR_ID)
         Github.sendQualityReport(Sonar.fromMeasureGetQAReport(measure));
     } catch (e) {
-        //console.error(e);
+        console.error(e);
         process.exit(1);
     }
 })();
