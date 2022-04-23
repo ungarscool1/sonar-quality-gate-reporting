@@ -22,7 +22,7 @@
         "analytics"
     ],
     "author": "Léo Godard <leo@legodard.fr>",
-    "license": "ISC",
+    "license": "GPLv3",
     "bugs": {
         "url": "https://github.com/ungarscool1/sonar-quality-gate-reporting/issues"
     },
