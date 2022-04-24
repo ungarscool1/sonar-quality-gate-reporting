@@ -19,7 +19,7 @@ jobs:
           SONAR_URL: ${{ secrets.SONAR_HOST_URL }}
           APP_ID: ${{ secrets.APP_ID }}
           APP_KEY: ${{ secrets.APP_KEY }}
-          INSTALLATION: ${{ secrets.APP_INSTALLATION }} 
+          INSTALLATION: ${{ secrets.INSTALLATION }} 
       - uses: sonarsource/sonarqube-quality-gate-action@master
         timeout-minutes: 5
         env:
