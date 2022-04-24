@@ -12,7 +12,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-      - uses: ungarscool1/sonar-quality-gate-reporting@v1.3.1
+      - uses: ungarscool1/sonar-quality-gate-reporting@master
         env:
           SONAR_ID: ${{ secrets.SONAR_ID }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
