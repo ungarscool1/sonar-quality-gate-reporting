@@ -11,6 +11,7 @@ This action comments your pull request with a message based on the quality gate 
 - **GITHUB_REPOSITORY**: GitHub repository
 - **APP_ID**: GitHub app ID
 - **APP_KEY**: GitHub app private key
+- **INSTALLATION**: GitHub app installation ID
 
 :warning: all environment variables are required !
 The ``GITHUB_x`` variables are set by default by GitHub.
@@ -29,4 +30,5 @@ env:
   SONAR_URL: https://my-sonarqube-server.com
   APP_ID: my-app-id
   APP_KEY: my-app-key
+  INSTALLATION: my-installation-id
 ```
