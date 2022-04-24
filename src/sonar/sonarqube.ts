@@ -19,30 +19,30 @@ export const fromMeasureGetQAReport = (measure: ComponentMeasure): QualityReport
         status: measure.component.measures.find(m => m.metric === 'alert_status')?.value === 'OK' ? 'passed' : 'failed',
         bugs: {
             value: bugs?.period?.value ?? '0',
-            type: getSecurityLevel(bugs?.period?.value ?? '0')
+            type: getSecurityLevel(measure.component.measures.find(m => m.metric === 'new_reliability_rating')?.period?.value ?? '0')
         },
         vulnerabilities: {
             value: vulnerabilities?.period?.value ?? '0',
-            type: getSecurityLevel(vulnerabilities?.period?.value ?? '0')
+            type: getSecurityLevel(measure.component.measures.find(m => m.metric === 'new_security_rating')?.period?.value ?? '0')
         },
         codeSmells: {
             value: codeSmells?.period?.value ?? '0',
-            type: getSecurityLevel(codeSmells?.period?.value ?? '0')
+            type: getSecurityLevel(measure.component.measures.find(m => m.metric === 'sqale_rating')?.value ?? '0')
         }
     }
 }
 
 const getSecurityLevel = (value: string): 'a' | 'b' | 'c' | 'd' | 'e' => {
     switch (value) {
-        case '1':
+        case '1.0':
             return 'a';
-        case '2':
+        case '2.0':
             return 'b';
-        case '3':
+        case '3.0':
             return 'c';
-        case '4':
+        case '4.0':
             return 'd';
-        case '5':
+        case '5.0':
             return 'e';
         default:
             return 'e';
